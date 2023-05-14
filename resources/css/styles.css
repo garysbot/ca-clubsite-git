@@ -1,0 +1,707 @@
+/* Color Palette References 
+Off White - #f4f1de
+Egg Shell - #f2cc8f
+Pale Green - #81b29a
+Pale Black - #3d405b
+Burnt Orange - #e07a5f
+*/
+
+/* Universal Styles */
+html {
+    font-size: 16px;
+    background-color: #f4f1de;
+    color: #3d405b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Instrument Serif', Georgia, serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+p,
+span,
+li
+ {
+    font-family: Barlow, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+li {
+    display: inline;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #e07a5f;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    color: #81b29a
+}
+
+
+.container {
+    display: block;
+    width: 100%;
+    height: 22rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.clubheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clubheader img {
+    width: auto;
+    height: 9.375rem;
+    margin-top: 3rem;
+}
+
+.clubheader h1 {
+    color: #81b29a;
+    margin-bottom: 3rem;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.navlink {
+    margin: 2rem;
+}
+
+/* Body Section */
+
+/* Section 1: About Us */
+
+/* Flex Section One
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.0025rem;
+}
+
+*/
+
+/* Section 1: Intro (Grid) */
+.section-grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    max-height: auto;
+    grid-template: 50% 50% / 25% 30%;
+    grid-template-areas: "image section-content"
+                         "image section-content";
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    column-gap: 5rem;
+}
+
+.section-grid img {
+    height: 35rem;
+    width: auto;
+}
+
+.image {
+    grid-area: image;
+    text-align: center;
+}
+
+.section-content {
+    grid-area: section-content;
+    margin: 0;
+    padding: 0;
+}
+
+.section-content h2,
+.section-content h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.wave-container {  
+  margin-top: 4rem;
+  height: 8vh;
+  background-color: #f4f1de;
+  position: relative;
+}
+
+.wave-container::before {   
+  content: "";
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  bottom: -53%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 20vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%2381b29a'/></svg>");
+}
+
+@media(max-width:850px) {
+  .wave-container::before {    
+    height: 65px
+  }  
+}
+
+/* Section 2: History */
+.section-two {
+  background-color: #81b29a;
+  margin-top: 0;
+  padding-top: 0;
+  height: 60rem;
+  text-align: center;
+}
+
+.section-two h2 {
+  margin-bottom: 0;
+  padding-top: 8rem;
+  color: #f2cc8f;
+}
+
+.section-two h5 {
+  margin:0;
+  padding-top: 0rem;
+  color: #f2cc8f;
+}
+
+.section-two h6 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.section-two p {
+  color: #3d405b;
+  margin: 0;
+}
+
+.section-two img {
+  height: 20rem;
+  width: auto;
+  border-radius: 50px;
+  margin-top: 3rem;
+}
+
+
+/* Section 3: Membership */
+
+.section-three {
+  background-color: #f4f1de;
+}
+
+.wave-container-two {  
+  height: 0.25vh;
+  background-color: #81b29a;
+  position: relative;
+}
+
+.wave-container-two::before {   
+  content: "";
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 20vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23f4f1de'/></svg>");
+}
+
+@media(max-width:850px) {
+  .wave-container::before {    
+    height: 65px
+  }  
+}
+
+/* Section 3: Train */
+.section-three {
+  display: block;
+  background-color: #f4f1de;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.train {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section-three h6 {
+  margin: 0;
+}
+
+.coaches {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile {
+  margin: 3rem;
+  text-align: center;
+  max-width: 15%;
+}
+
+.profile-pic {
+  width: auto;
+  height: 10rem;
+  border-radius: 100%;
+}
+
+.profile h5 {
+  margin: 0;
+}
+
+.race-orgs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.org {
+  width: 7rem;
+  height: auto;
+  margin: 1rem;
+}
+
+/* Section 4: Group Runs */
+.section-four {
+  display: block;
+  background-color: #f4f1de;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.section-four h2 {
+  margin-top:10rem;
+  margin-bottom: 0;
+}
+
+.section-four h5 {
+  margin: 0;
+}
+
+.section-four h6 {
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+
+.section-four ul {
+  margin-bottom: 5rem;
+}
+
+.section-four li {
+  margin: 1rem;
+}
+
+.groupruns {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: space-around;
+  margin-top: 5rem;
+
+}
+
+.group-pic {
+  width: 30rem;
+  height: auto;
+  border-radius: 50px;
+}
+
+/* Section 5: Race */
+.section-five {
+  display: block;
+  height: auto;
+  padding: 5rem 0;
+  text-align: center;
+  background-color: #81b29a;
+}
+
+.section-five h2,
+.section-five h5,
+.section-five h6,
+.section-five p {
+  color: #f2cc8f;
+  margin: 0;
+}
+
+.section-five h5 {
+  margin: 0 0 5rem 0;
+}
+
+.race {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.race-training-options {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.race-option {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 20%;
+  text-align: center;
+}
+
+.race-option h6 {
+  margin:0 0 2rem 0;
+  font-family: Barlow, Helvetica, sans-serif;
+}
+
+.race-option p {
+  margin: 2rem 0 0 0;
+}
+.race-option img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+}
+
+.race-button {
+  margin: 2rem;
+  padding: 1rem 3rem;
+  background-color: #e07a5f;
+  border: none;
+  border-radius: 15px;
+}
+
+.race-button a {
+  font-family: Barlow, Helvetica, sans-serif;
+  color:#f4f1de;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Section 6: Diversity */
+.section-six {
+  display: block;
+  height: auto;
+  padding: 5rem 0;
+  text-align: center;
+  background-image: url('../imgs/diversity.png');
+  background-size: cover;
+  padding-top: 10rem;
+}
+
+.section-six h2,
+.section-six h5 {
+  color:#f4f1de;
+  margin: 0;
+}
+
+.section-six p {
+  color:#f4f1de;
+  margin: 2rem 10rem;
+}
+
+.diversity {
+  display: block;
+  text-align: center;
+}
+
+/* Section 7: Photo Gallery */
+.section-seven {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.section-seven h2,
+.section-seven h5 {
+  margin: 0;
+}
+
+.photo-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 3rem 10rem;
+}
+
+.photo {
+  width: 25%;
+  height: auto;
+  border-radius: 30px;
+}
+
+/* Footer */
+footer {
+  height: 7rem;
+  background-color: #81b29a;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer ul,
+footer h6 {
+  margin:1rem 0;
+}
+
+.footerlink {
+  margin: 1rem;
+}
+
+.footerlink a {
+  color:#f2cc8f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+/* Mobile */
+@media only screen and (device-width: 390px) and (device-height: 844px)  {
+  .clubheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .clubheader img {
+    width: auto;
+    height: 400px;
+    margin-top: 3rem;
+  }
+
+  .clubheader h1 {
+    font-size: 8rem;
+  }
+
+  /* Navigation Menu */
+  nav {
+    display: none;
+  }
+
+  .section-grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    max-height: auto;
+    grid-template: 50% 50% / 15% 45%;
+    grid-template-areas: "image section-content"
+                         "image section-content";
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    column-gap: 15rem;
+  }
+
+.section-grid img {
+    height: 30rem;
+    width: auto;
+  }
+
+  .wave-container {  
+    margin-top: 4rem;
+    height: 8vh;
+    background-color: #f4f1de;
+    position: relative;
+  }
+  
+  .wave-container::before {   
+    content: "";
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    bottom: -40%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 20vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%2381b29a'/></svg>");
+  }
+
+  .section-two {
+    background-color: #81b29a;
+    margin-top: 0;
+    padding-top: 0;
+    height: 85rem;
+    text-align: center;
+  }
+
+  .section-two h2 {
+    margin-bottom: 0;
+    padding-top: 8rem;
+    color: #f2cc8f;
+    font-size: 5rem;
+  }
+  
+  .section-two h5 {
+    margin:0;
+    padding-top: 0rem;
+    color: #f2cc8f;
+    font-size: 3rem;
+  }
+  
+  .section-two h6 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+  }
+  
+  .section-two p {
+    color: #3d405b;
+    margin: 0 3rem;
+    font-size: 2rem;
+  }
+  
+  .section-two img {
+    height: 30rem;
+    width: auto;
+    border-radius: 50px;
+    margin-top: 3rem;
+  }
+
+  .profile {
+    padding-bottom: 3rem;
+  }
+  .profile p {
+    display: none;
+  }
+
+  .groupruns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .group-pic {
+    margin: 1.5rem 0;
+  }
+
+  .section-four ul {
+    margin: 1.5rem;
+    padding: 0;
+  }
+
+  .race-training-options {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .race-option {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .race-option h6 {
+    margin:0 0 2rem 0;
+    font-family: Barlow, Helvetica, sans-serif;
+    font-size: 4rem;
+  }
+  
+  .race-option p {
+    margin: 2rem 0 0 0;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  .race-option img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 100%;
+  }
+  
+  .race-button {
+    margin: 4rem;
+    padding: 2rem 6rem;
+    background-color: #e07a5f;
+    border: none;
+    border-radius: 2rem;
+    font-size: 2rem;
+  }
+  
+  .race-button a {
+    font-family: Barlow, Helvetica, sans-serif;
+    color:#f4f1de;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+}
