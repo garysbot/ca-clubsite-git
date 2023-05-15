@@ -205,22 +205,23 @@ nav {
 .section-two h2 {
   margin-bottom: 0;
   padding-top: 8rem;
-  color: #f2cc8f;
+  color: #f4f1de;
 }
 
 .section-two h5 {
   margin:0;
   padding-top: 0rem;
-  color: #f2cc8f;
+  color: #f4f1de;
 }
 
 .section-two h6 {
+  color: #f4f1de;
   margin-top: 1rem;
   margin-bottom: 0;
 }
 
 .section-two p {
-  color: #3d405b;
+  color: #f4f1de;
   margin: 0;
 }
 
@@ -382,7 +383,7 @@ nav {
 .section-five h5,
 .section-five h6,
 .section-five p {
-  color: #f2cc8f;
+  color: #f4f1de;
   margin: 0;
 }
 
@@ -499,6 +500,41 @@ nav {
   height: auto;
   border-radius: 30px;
 }
+
+/* Section Eight: Membership */
+.section-eight {
+  display: flex;
+  height: 24rem;
+  text-align: center;
+  background-image: url('../imgs/joinusbg.png');
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-eight h2,
+.section-eight h5 {
+  color:#3d405b;
+  margin: 0;
+}
+
+.section-eight .joinus {
+  padding: 2rem;
+}
+
+.section-eight button {
+  margin: 2rem;
+  padding: 1rem 3rem;
+  background-color: #e07a5f;
+  border: none;
+  border-radius: 15px;
+  font-family: Barlow, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color:#f4f1de;
+  cursor: pointer;
+}
+
+
 
 /* Footer */
 footer {
