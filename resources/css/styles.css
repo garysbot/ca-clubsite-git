@@ -96,7 +96,8 @@ header a:hover {
 
 .clubheader h1 {
     color: #81b29a;
-    margin-bottom: 3rem;
+    margin-top:1rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Navigation Menu */
